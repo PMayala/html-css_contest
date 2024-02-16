@@ -65,7 +65,7 @@
 }
 
 #section02 {
-  margin: 0 auto;
+  margin: 70px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -99,3 +99,50 @@
   align-items: center;
   gap: 5px;
 }
+
+#section03 h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 35px;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 34px 27px;
+  gap: 20px;
+  width: 360px;
+  background-color: #f5f5f5;
+}
+
+.event .pfp  {
+  width: 100%;
+  height: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.purpose {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.calendar {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
