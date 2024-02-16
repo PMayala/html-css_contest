@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -62,4 +62,33 @@
 
 .hero-section button {
   width: fit-content;
+}
+
+#section02 {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#section02 h2{
+    text-align: center;
+}
+
+.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 341px;
+}
+
+.members img {
+    width: 100%;
+    height: auto;
 }
