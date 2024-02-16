@@ -94,7 +94,9 @@
     height: auto;
 }
 
-.dot span {
-    font-size: 8px;
-    color: #b4282e;
+.dot {
+    display: flex;
+    align-items: center;
+    
 }
+
