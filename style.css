@@ -298,4 +298,18 @@ footer {
   .events {
     justify-content: center;
   }
+
+  #section04 {
+    padding: 0 40px;
+  }
+
+  .input-form {
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
