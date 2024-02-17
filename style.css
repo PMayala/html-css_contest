@@ -21,10 +21,18 @@
   font-size: 18px;
 }
 
+.header nav {
+  font-weight: 500;
+}
+
 .header nav ul {
   list-style-type: none;
   display: flex;
   gap: 7.5rem;
+}
+
+.header nav ul li a:hover {
+  color: #b4282e;
 }
 
 .header a {
@@ -208,16 +216,42 @@ footer {
   gap: 15px;
 }
 
-@media screen and (max-width: 480px) {
-  .header nav {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    width: 33%;
-    background: white;
-    height: 100vh;
-    z-index: 2;
-    transition: right 0.5s ease-in-out;
-    padding: 4.6em;
+.open {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 30px;
+  }
+
+  .open {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
   }
 }
