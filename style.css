@@ -192,10 +192,10 @@ form button:hover {
 }
 
 footer {
-width: 100%;
-height: 200px;
-padding: 40px 30px;
-background-color: #b4282e;
+  width: 100%;
+  height: 200px;
+  padding: 40px 30px;
+  background-color: #b4282e;
 }
 
 .bottom {
@@ -206,4 +206,18 @@ background-color: #b4282e;
 .social-media {
   display: flex;
   gap: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .header nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 33%;
+    background: white;
+    height: 100vh;
+    z-index: 2;
+    transition: right 0.5s ease-in-out;
+    padding: 4.6em;
+  }
 }
