@@ -40,6 +40,10 @@
   color: inherit;
 }
 
+.open-btn {
+  display: none;
+}
+
 .button {
   color: white;
   background-color: #b4282e;
@@ -51,6 +55,10 @@
 .button a {
   color: white;
   text-decoration: none;
+}
+
+.close-btn {
+  display: none;
 }
 
 #section01 {
@@ -213,45 +221,81 @@ footer {
 
 .social-media {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
-.open {
-  display: none;
-}
-
-@media only screen and (max-width: 900px) {
-  header {
-    padding: 0 30px;
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 0 25px;
+  }
+  .header nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: #b4282e;
+    color: white;
+    height: 100vh;
+    padding: 40px;
+    width: 40%;
   }
 
-  .open {
-    display: block;
+  .nav.open {
+    right: 0%;
   }
-  .nav {
-    position: absolute;
-    width: 100%;
-    left: -100%;
-    top: 70px;
-    width: 100%;
-    background: #fff;
-    padding: 30px;
-    transition: 0.3s;
+
+  .header nav ul li a:hover {
+    color: white;
+    font-weight: 600;
   }
-  header #nav_check:checked ~ nav {
-    left: 0;
-  }
-  header nav ul {
-    display: block;
-  }
-  header nav ul li a {
-    margin: 5px 0;
+
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
   .menu {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+
+  .open-btn {
+    display: block;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .close-btn {
+    display: block;
+    width: 30px;
+    height: auto;
+    margin-left: auto;
+  }
+
+  #section01 {
+    flex-direction: column;
+  }
+
+  #section01 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-members {
+    justify-content: center;
+  }
+
+  .events {
+    justify-content: center;
   }
 }
