@@ -13,15 +13,17 @@
         <nav class="nav">
           <img src="img/close.svg" alt="" class="close-btn" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="#section01">Home</a></li>
+            <li><a href="#section02">About</a></li>
+            <li><a href="#section03">Events</a></li>
           </ul>
         </nav>
         <div class="menu">
           <img src="img/open.svg" alt="open" class="open-btn" />
 
-          <button class="button contact"><a href="#">Contact Us</a></button>
+          <button class="button contact">
+            <a href="#section04">Contact Us</a>
+          </button>
         </div>
       </header>
       <section id="section01">
@@ -38,7 +40,9 @@
             invest in your future, Alma Connect offers a supportive network to
             help you thrive.
           </p>
-          <button class="button"><a href="#">Check Out Events</a></button>
+          <button class="button">
+            <a href="#section03">Check Out Events</a>
+          </button>
         </div>
       </section>
       <section id="section02">
@@ -509,6 +513,14 @@
           .addEventListener("click", function () {
             document.querySelector("nav").classList.toggle("open");
           });
+
+        const list = document.querySelectorAll("li");
+
+        list.forEach(function (li) {
+          li.addEventListener("click", function () {
+            document.querySelector("nav").classList.toggle("open");
+          });
+        });
       });
     </script>
   </body>

@@ -7,6 +7,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1120px;
   margin: 0 auto;
@@ -33,6 +37,8 @@
 
 .header nav ul li a:hover {
   color: #b4282e;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .header a {
@@ -237,6 +243,7 @@ footer {
     height: 100vh;
     padding: 40px;
     width: 40%;
+    transition: right 0.5s ease-in-out;
   }
 
   .nav.open {
@@ -311,5 +318,16 @@ footer {
     padding-left: 10px;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
